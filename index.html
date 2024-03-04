@@ -1,0 +1,488 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.polyfills.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+    <style type="text/tailwindcss">
+
+        @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+      .hamburger {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.25s;
+    position: relative;
+}
+
+
+      
+    }
+  </style>
+
+
+
+    <script>
+        tailwind.config = {
+            theme: {
+                screen: {
+                    sm: '480px',
+                    md: '768px',
+                    lg: '976px',
+                    sm: '1440px',
+
+                },
+                extend: {
+                    fontFamily: {
+                        sans: ['Josefin Sans', 'sans-serif'],
+                        alata: ['Alata'],
+
+                    },
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+
+
+
+<body>
+
+    <!-- header section -->
+    <section id="headerPage">
+
+        <div class="container max-w-6xl mx-auto px-6 py-12 md:px-0">
+            <!-- Menu/logo container -->
+            <nav class="flex items-center justify-between font-bold text-white ">
+                <img src="./logo-removebg-preview.png" class="w-80">
+                <!-- menu -->
+                <div class="hidden h-10 font-alata md:flex md:space-x-8">
+                    <div class="group">
+                        <a href="#vedette">ARTICLES VEDETTES</a>
+                        <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                    </div>
+
+                    <div class="hidden h-10 font-alata md:flex md:space-x-8">
+                        <div class="group">
+                            <a href="#cat">CATÉGORIES</a>
+                            <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                        </div>
+
+                        <div class="hidden h-10 font-alata md:flex md:space-x-8">
+                            <div class="group">
+                                <a href="#recent">ARTICLES RÉCENTS</a>
+                                <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                            </div>
+
+                            <div class="hidden h-10 font-alata md:flex md:space-x-8">
+                                <div class="group">
+                                    <a href="#rejoignez">Rejoignez Nous</a>
+                                    <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- hamburger button -->
+                <div class="md:hidden">
+                    <button id="menu-btn" type="button" class="  z-40 md:hidden hamburger focus:outline-none">
+                        <span class="hamburger-top"></span>
+                        <span class="hamburger-middle"></span>
+                        <span class="hamburger-bottom"></span>
+                    </button>
+                </div>
+
+
+            </nav>
+
+
+            <!-- mobile menu -->
+            <div id="menu"
+                class="absolute top-0 bottom-0 left-0 hidden flex-col self-end  w-full min-h-screen py-1 pt-40 pl-12 space-y-3 text-lg text-white uppercase bg-teal-950 opacity-75">
+                <a href="#vedette" class="menuItem hover:text-red-500">ARTICLES VEDETTES</a>
+                <a href="#cat" class="menuItem hover:text-red-500">CATÉGORIES</a>
+                <a href="#recent" class="menuItem hover:text-red-500">ARTICLES RÉCENTS</a>
+                <a href="#rejoignez" class="menuItem hover:text-red-500">Rejoignez Nous</a>
+            </div>
+
+
+            <div
+                class="max-w-lg mt32 mb-32 p-4 font-sans text-4xl text-white uppercase border-2 md:m-32 md:mx-0 md:text-6xl ">
+                Explorez le monde des Lions de l'Atlas
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <!-- articles en vedette -->
+    <section class="bg-teal-950" id="vedette">
+
+        <!-- global container -->
+        <div class="flex flex-col item-center justify-center min-h-screen">
+            <h2 class=" mt-10 mx-auto text-4xl text-white uppercase md:text-left md:text-5xl">Articles vedettes</h2>
+
+            <!-- iNNER CONTAINER -->
+            <div class="flex flex-col my-6 space-y-6 md:space-y-0 md:flex-row md:my-6">
+
+                <!-- COL 1-->
+                <div class="flex bg-teal-950 border-2 border-white rounded-2xl p-2 mx-6 text-black md:flex-col ">
+                    <!-- upper-part-->
+                    <img src="./art1.jpg" class=" object-fit w-72  rounded-xl md:object-cover md:w-full md:h-64 ">
+                    <!-- content -->
+                    <div class="m-2 flex-col space-y-2 relative">
+                        <h2 class=" font-sans text-lg font-medium text-center text-white md:text.left">LES MAMANS : CES
+                            HÉROÏNES DE LA COUPE DU MONDE</h2>
+                        <p class="max-w pb-12 text-xs leadind-5 tracking-wide text-center text-white md:text-left">La
+                            candidature conjointe du Portugal, de l'Espagne et du Maroc pour organiser la Coupe du monde
+                            de football 2030 est ''sur la bonne voie'', a souligné, jeudi ...</p>
+                        <div
+                            class="button  px-3 py-2 0text-sm w-32 h-10 align-center justify-center text-center text-white bg-teal-900 border border-green rounded-md shadow-2xl duration-200  hover:cursor-pointer hover:bg-white hover:text-teal-950 absolute bottom-0 right-0  ">
+                            Read more</div>
+                    </div>
+
+                </div>
+                <!-- COL 2-->
+                <div class="flex bg-teal-950 border-2 border-white rounded-2xl p-2 mx-6 text-black md:flex-col ">
+                    <!-- upper-part-->
+                    <img src="./2030.jpg" class=" object-fit w-72  rounded-xl md:object-cover md:w-full md:h-64  ">
+                    <!-- content -->
+                    <div class="m-2 flex-col space-y-2 relative">
+                        <h2 class=" font-sans text-lg font-medium text-center text-white md:text.left uppercase">La
+                            candidature
+                            Maroc-Espagne-Portugal est sur "la bonne voie"</h2>
+                        <p class="max-w pb-12 text-xs leadind-5 tracking-wide text-center text-white md:text-left">
+                            Auteurs d’un parcours historique lors de la Coupe du monde Qatar 2022, les Lions de l'Atlas
+                            ont pu compter sur le soutien inconditionnel de leurs proches ...</p>
+                        <div
+                            class="button  px-3 py-2 0text-sm w-32 h-10 align-center justify-center text-center text-white bg-teal-900 border border-green rounded-md shadow-2xl duration-200  hover:cursor-pointer hover:bg-white hover:text-teal-950 absolute bottom-0 right-0 ">
+                            Read more</div>
+                    </div>
+
+                </div>
+
+                <!-- COL 3-->
+
+                <div class="flex bg-teal-950 border-2 border-white rounded-2xl p-2 mx-6 text-black md:flex-col">
+                    <!-- upper-part-->
+                    <img src="./diaz.jpg" class=" object-fit w-72  rounded-xl md:object-cover md:w-full md:h-64 ">
+                    <!-- content -->
+                    <div class="m-2 flex-col space-y-2 relative">
+                        <h2 class=" font-sans text-lg font-medium text-center text-white md:text.left uppercase">Brahim
+                            Diaz snobe
+                            l’Espagne et part au Maroc</h2>
+                        <p class="max-w pb-12 text-xs leadind-5 tracking-wide text-center text-white md:text-left">a
+                            fédération royale du Maroc de football travaille à sceller le futur de Brahim Diaz, la star
+                            du Real Madrid, avec l’équipe nationale “Les Lions de l’Atlas” ...</p>
+                        <div
+                            class="button  px-3 py-2 0text-sm w-32 h-10 align-center justify-center text-center text-white bg-teal-900 border border-green rounded-md shadow-2xl duration-200  hover:cursor-pointer hover:bg-white hover:text-teal-950 absolute bottom-0 right-0 ">
+                            Read more</div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+    <!-- section categories -->
+    <section id="cat" class="bg-teal-950">
+        <!-- container -->
+        <div class="container max-w-6xl mx-auto py-20 px-6 md:px-0 bg-teal-950 ">
+            <!-- title -->
+
+            <div class=" px-auto mb-10">
+                <h2 class="text-4xl text-center text-white uppercase md:text-center md:text-5xl">Catégories</h2>
+            </div>
+            <!-- items container 1 -->
+            <div
+                class="flex flex-col justify-between w-full space-y-6 text-2-xl text-white uppercase md:flex-row md:space-y-0 md:space-x-8">
+
+
+                <div class="group relative overflow-hidden md:w-1/4">
+                    <!-- desktop image -->
+                    <img src="./grand.jpg" alt=""
+                        class="hidden w-full h-96 duration-200 md:block group-hover:scale-110">
+                    <!-- mobile image -->
+                    <img src="./grandmob.jpg" class="w-full md:hidden">
+                    <!-- gradient -->
+                    <div
+                        class=" group-hover:cursor-pointer absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70 ">
+                    </div>
+
+                    <!-- item text -->
+                    <h5
+                        class="absolute px-6 duration-200 w-52 bottom-4 md:bottom-8 md:mx-auto md:px-10 group-hover:scale-110 group-hover:text-black">
+                        Equipe Senior
+                    </h5>
+                </div>
+
+                <!-- items container 2 -->
+
+                <div class="group relative overflow-hidden md:w-1/4">
+                    <!-- desktop image -->
+                    <img src="./olympiquepc.jpg" alt=""
+                        class="hidden  w-full h-96  duration-200 md:block group-hover:scale-110">
+                    <!-- mobile image -->
+                    <img src="./olympicmob.jpg" class="w-full md:hidden">
+                    <!-- gradient -->
+                    <div
+                        class=" group-hover:cursor-pointer absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70 ">
+                    </div>
+
+                    <!-- item text -->
+                    <h5
+                        class="absolute px-6 duration-200 w-52 bottom-4 md:bottom-8 md:mx-auto md:px-10 group-hover:scale-110 group-hover:text-black">
+                        Equipe Olympique
+                    </h5>
+
+                </div>
+
+
+                <!-- items container 3 -->
+
+
+                <div class="group relative overflow-hidden md:w-1/4">
+                    <!-- desktop image -->
+                    <img src="./women.jpg" alt=""
+                        class="hidden  w-full h-96  duration-200 md:block group-hover:scale-110 ">
+                    <!-- mobile image -->
+                    <img src="./Ghizlane-Chebbakmob.jpg" class="w-full md:hidden ">
+                    <!-- gradient -->
+                    <div
+                        class="group-hover:cursor-pointer absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70 ">
+                    </div>
+
+                    <!-- item text -->
+                    <h5
+                        class="absolute px-6 duration-200 w-52 bottom-4 md:bottom-8 md:mx-auto md:px-10 group-hover:scale-110 group-hover:text-black">
+                        Equipe Féminine
+                    </h5>
+
+                </div>
+
+                <!-- items container 4 -->
+
+
+                <div class="group relative overflow-hidden md:w-1/4">
+                    <!-- desktop image -->
+                    <img src="./u17pc.jpg" alt=""
+                        class="hidden  w-full h-96  duration-200 md:block group-hover:scale-110">
+                    <!-- mobile image -->
+                    <img src="./u-17.jpeg" class="w-full md:hidden">
+                    <!-- gradient -->
+                    <div
+                        class=" group-hover:cursor-pointer absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70 ">
+                    </div>
+
+                    <!-- item text -->
+                    <h5
+                        class="absolute px-6 duration-200 w-52 bottom-4 md:bottom-8 md:mx-auto md:px-10 group-hover:scale-110 group-hover:text-black">
+                        Equipe U-17
+                    </h5>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+    <!-- articles Récents -->
+    <section class="bg-teal-950" id="recent">
+
+        <!-- global container -->
+        <div class="flex flex-col item-center justify-center min-h-screen">
+            <h2 class=" mt-10 mx-auto text-4xl text-white uppercase md:text-left md:text-5xl">Articles Récents</h2>
+
+            <!-- iNNER CONTAINER -->
+            <div class="flex flex-col my-6 space-y-6 md:space-y-0 md:flex-row md:my-6">
+
+                <!-- COL 1-->
+                <div class="flex bg-teal-950 border-2 border-white rounded-2xl p-2 mx-6 text-black md:flex-col ">
+                    <!-- upper-part-->
+                    <img src="./Tarik-Sektioui.jpg"
+                        class=" object-fit w-72  rounded-xl md:object-cover md:w-full md:h-64 ">
+                    <!-- content -->
+                    <div class="m-2 pt-10 flex-col space-y-2 relative">
+                        <h2 class=" font-sans text-lg font-medium text-center text-white md:text.left uppercase">Tarik
+                            Sektioui succède à Issam Charaï à la tête de la sélection U23
+
+                        </h2>
+                        <p class="max-w pb-12 text-xs leadind-5 tracking-wide text-center text-white md:text-left">La
+                            Fédération royale marocaine de football (FRMF) a annoncé, jeudi soir, la nomination de Tarik
+                            Sektioui en tant qu’entraîneur de la sélection du Maroc des mois de 23 ans
+
+                            ...</p>
+
+                        <p
+                            class=" text-xs leadind-5 tracking-wide  text-white md:text-left absolute top-0 left-0 border-b border-white">
+                            Publié le 02/03/2024 </p>
+                        <div
+                            class="button  px-3 py-2 0text-sm w-32 h-10 align-center justify-center text-center text-white bg-teal-900 border border-green rounded-md shadow-2xl duration-200  hover:cursor-pointer hover:bg-white hover:text-teal-950 absolute bottom-0 right-0  ">
+                            Read more</div>
+
+                    </div>
+
+                </div>
+                <!-- COL 2-->
+                <div class="flex bg-teal-950 border-2 border-white rounded-2xl p-2 mx-6 text-black md:flex-col ">
+                    <!-- upper-part-->
+                    <img src="./hicham-dguig.jpg"
+                        class=" object-fit w-72  rounded-xl md:object-cover md:w-full md:h-64  ">
+                    <!-- content -->
+                    <div class="m-2 pt-10 flex-col space-y-2 relative">
+                        <h2 class=" font-sans text-lg font-medium text-center text-white md:text.left uppercase">Hicham
+                            Dguig satisfait après la double victoire des Lions de l’Atlas contre la Roumanie</h2>
+                        <p class="max-w pb-12 text-xs leadind-5 tracking-wide text-center text-white md:text-left">
+                            Auteurs d’un parcours historique lors de la Coupe du monde Qatar 2022, les Lions de l'Atlas
+                            ont pu compter sur le soutien inconditionnel de leurs proches ...</p>
+                        <p
+                            class="  text-xs leadind-5 tracking-wide  text-white md:text-left absolute top-0 left-0 border-b border-white ">
+                            Publié le 15/02/2024 </p>
+                        <div
+                            class="button  px-3 py-2 0text-sm w-32 h-10 align-center justify-center text-center text-white bg-teal-900 border border-green rounded-md shadow-2xl duration-200  hover:cursor-pointer hover:bg-white hover:text-teal-950 absolute bottom-0 right-0 ">
+                            Read more</div>
+
+                    </div>
+
+                </div>
+
+                <!-- COL 3-->
+
+                <div class="flex bg-teal-950 border-2 border-white rounded-2xl p-2 mx-6 text-black md:flex-col">
+                    <!-- upper-part-->
+                    <img src="./diaz.jpg" class=" object-fit w-72  rounded-xl md:object-cover md:w-full md:h-64 ">
+                    <!-- content -->
+                    <div class="m-2 pt-10 space-y-2 relative">
+                        <h2 class=" font-sans text-lg font-medium text-center text-white md:text.left uppercase">Brahim
+                            Diaz snobe
+                            l’Espagne et part au Maroc</h2>
+                        <p class="max-w pb-12 text-xs leadind-5 tracking-wide text-center text-white md:text-left">La
+                            fédération royale du Maroc de football travaille à sceller le futur de Brahim Diaz, la star
+                            du Real Madrid, avec l’équipe nationale “Les Lions de l’Atlas” ...</p>
+                        <p
+                            class="- text-xs leadind-5 tracking-wide  text-white md:text-left absolute top-0 left-0 border-b border-white ">
+                            Publié le 15/02/2024 </p>
+                        <div
+                            class="button  px-3 py-2 0text-sm w-32 h-10 align-center justify-center text-center text-white bg-teal-900 border border-green rounded-md shadow-2xl duration-200  hover:cursor-pointer hover:bg-white hover:text-teal-950 absolute bottom-0 right-0 ">
+                            Read more</div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+    <!-- background container -->
+    <div id="rejoignez" class="flex items-center justify-center min-h-screen bg-teal-950">
+        <!-- card -->
+        <div class="bg-stone-900 p-2 mx-2 my-5 rounded-2xl">
+            <!-- flex container -->
+            <div class="flex flex-col md:flex-row rounded-l-xl">
+                <!-- Image -->
+                <img src="./saiss.jpg" alt=""
+                    class="object-fit rounded-xl h-80 md:h-64 md:rounded-l-xl md:rounded-r-none transform md:hover:scale-105 hover:rounded-xl duration-200">
+
+                <!-- content -->
+                <div class="p-6 md:p-12">
+                    <h2 class="font-sans text-xl font-medium text-center text-white md:text-left">Rejoignez la
+                        Communauté du Football Marocain!</h2>
+                    <p class="max-w-md  text-sm leadind-5 tracking-wide text-center text-white md:text-left">Plongez
+                        dans l'univers captivant du football marocain en vous inscrivant maintenant. Mises à jour
+                        exclusives et contenus uniques vous attendent !</p>
+                    <div class="flex flex-col mt-5 space-y-4 md:space-x-3 md:flex-row md:space-y-0">
+                        <input type="text" placeholder="Entrez votre adresse E-mail"
+                            class="p-2 px-4 text-center text-white bg-stone-900 border border-stone-600 placeholder:text-xs placeholder-stone-500 placeholder:text-center md:text-left placeholder:md:text-left focus:ou">
+                        <button
+                            class="px-5 py-3 text-sm rounded-md text-teal-950 bg-red-500 hover:bg-red-700 hover:text-white duration-600">
+                            S'inscrire</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+
+    </div>
+
+    <footer class="bg-stone-900">
+        <!-- container -->
+        <div class="section-container">
+            <div class="flex flex-col item-center justify-between  md:flex-row">
+                <a href="#" id="logo"><img src="./logo-removebg-preview.png" class="w-48 mx-auto hover:scale-105"
+                        alt=""></a>
+                <!-- social -->
+                <div class="font-sm  text-stone-50 mx-auto my-5 md:mt-5 md:mr-10">&copy; 2024 Atlas Soccer Hub. All
+                    Rights Reserved</div>
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
